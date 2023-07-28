@@ -1,0 +1,318 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+  color:black;
+	}
+label{
+  color: white;
+  margin: 15px 0px 3px 0px;
+}
+/* GENERAL */
+
+.submitButton{
+  margin-top: 40px;
+  background-color: rgb(82, 53, 109);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
+input{
+  padding: 5px;
+}
+input[type='checkbox']{
+  width: 25px;
+}
+.spanContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 100%;
+}
+.spanContainer label{
+  margin: 0;
+}
+
+/* Switch */
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 22px;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.switch input {display:none}
+
+.slider::before{
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  transform: 0.4s;
+  border-radius: 50px;
+}
+input:checked + .slider{
+  background-color: #ff278c;
+}
+input:checked +.slider::before{
+  transform: translateX(15px);
+}
+.checkContainer{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.switch{
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+
+}
+p{
+  color: white;
+  text-align: start;
+  width: 100%;
+  margin-top: 13px;
+
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  background-image: linear-gradient(#5b5b5e, #6a1cfc);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 7px;
+  background: #a683fa;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+@media only screen and (max-width:600px){
+  .barraNav{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .barraNav p{
+    margin-right: 50px;
+  }
+  .formFormat{
+    width: 250px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .loginContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .App{
+    background-color: rgb(39, 39, 97);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .subcontainer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .subcontainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(39, 39, 97);
+    height: fit-content;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 3;
+  }
+  li{
+    color: white;
+    list-style-type: none;
+    margin: 6px 0;
+  }
+  .cardContainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.199);
+    padding: 20px 0;
+  }
+  .formContainer{
+    margin-bottom: 50px;
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.199);
+    padding-bottom: 50px;
+  
+  }
+  .map-container{
+    margin-bottom: 50px;
+    width: 90%;
+    height: 50vh;
+    }
+}
+@media only screen and (min-width:601px){
+
+  .barraNav{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .barraNav p{
+    margin-right: 50px;
+  }
+
+  .formFormat{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .cardContainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.199);
+    padding: 20px 0;
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 3;
+  }
+  li{
+    color: white;
+    list-style-type: none;
+    margin: 6px 0;
+  }
+  .subcontainer1{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .subcontainer2{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 97);
+    padding-bottom: 50px;
+  }
+  .App{
+    background-color: rgb(39, 39, 97);
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .formContainer{
+    width: 400px;
+    height: 650px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.199);
+    margin-right: 100px;
+  }
+  .map-container{
+    width: 50%;
+    height: 50vh;
+    }
+  .loginContainer{
+    width: 601px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-top: 200px;
+  }
+}

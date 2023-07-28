@@ -3,8 +3,11 @@ import {GoogleMap, useLoadScript} from "@react-google-maps/api";
 
 
 const MyMap = ({setUbi,currentZoom,zoom}) => {
+
+    const API_KEY = ''
+
     const {isLoaded} = useLoadScript({
-        googleMapsApiKey: 'AIzaSyAOPoU69U077GALJmy3IwwoIsD50HqRfs4',
+        googleMapsApiKey: API_KEY,
     });
     if (!isLoaded) return <div>Loading...</div>;
 
